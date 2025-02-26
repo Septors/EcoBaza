@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBaza</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/shop.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="header__contact" aria-label="Store Location">
+                    <img src="/img/Map Pin.png" alt="Map Pin">
+                    <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                </a>
+                <div class="header__links">
+                    <div class="header__select">
+                        <label for="language-select" class="visually-hidden">Select Language</label>
+                        <select id="language-select" class="header__lang-select">
+                            <option value="UA">UA</option>
+                            <option value="ENG">ENG</option>
+                            <option value="RU">RU</option>
+                        </select>  
+                        <label for="valute-select" class="visually-hidden">Select Currency</label>
+                        <select id="valute-select" class="header__valute-select">
+                            <option value="USD">USD</option>
+                            <option value="UAH">UAH</option>
+                            <option value="EURO">EURO</option>
+                        </select>
+                    </div>
+                    <div class="header__account">
+                        <a href="#">Sign In</a>
+                        <span>|</span>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__main">
+                <div class="header__logo">
+                    <img src="/img/header__logo.png" alt="Ecobazar logo">
+                    <h1>Ecobazar</h1>
+                </div>
+                <div class="header__search">
+                    <form action="#" class="header__search-form">
+                        <input type="text" placeholder="Search" aria-label="Search products">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="header__action">
+                    <a href="#" class="favorite-link" aria-label="View favorite items">
+                        <img class="favorite--active" src="/img/header__favorite.png" alt="favorite">
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="cart__container" aria-label="View cart">
+                        <img src="/img/header__cart.png" alt="cart">
+                    </a>
+                    <div class="header__car-value">
+                        <p>Shopping cart:</p>
+                        <p>$57.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="nav_main">
+                    <ul class="nav__category">
+                        <li class="category__button category__button--active"><a href="/index.html" >Home <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        
+                        <li class="category__button"><a>Shop <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>Pages <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>Blog <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>About Us</a></li>
+                        <li class="category__button"><a>Contact Us</a></li>
+                    </ul>
+                    <div class="call__now">
+                        <a href="tel:(219) 555-0114" aria-label="Call us">
+                            <img src="/img/PhoneCall 1.png" alt="Phone call">
+                            <p>(219) 555-0114</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="filter">
+            <div class="container">
+                <div class="filter__main">
+
+                
+            <select  id="select__category">
+                <option value="" disabled selected>Выберите категорию</option>
+                <option value="all">Все категории</option>
+                <option value="fruit">фрукты</option>
+                <option value="vegetables">овощи</option>
+            </select>
+            <select id="select__rating">
+                <option value="0" disabled selected>Выберите рейтинг</option>
+                <option value="all">Все</option>
+                <option value="5"> 5★</option>
+                <option value="4"> 4★</option>
+            </select>
+            <select  id="select__price">
+                <option value="0" disabled selected>Выберите показатель цены</option>
+                <option value="expensive">expensive</option>
+                <option value="less">less</option>
+            </select>
+            <select  id="select__sold">
+                <option value="0" disabled selected>Выберите количество продаж</option>
+                <option value="moreSold">more Sold</option>
+                <option value="lessSold"> less Sold</option>
+            </select>
+            <select name="show" id="elect__card-view">
+                <option value="0" disabled selected>Выберите количество карточек товара</option>
+                <option value="16">16</option>
+                <option value="12">12</option>
+                <option value="8">8</option>
+                
+            </select>
+        </div>
+            </div>
+        </section>
+        <section >
+            <div class="container">
+            <div class="shop__product">
+        </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+        <div class="footer__subscribe">
+                <div class="subscribe__logo">
+                    <img src="/img/header__logo.png" alt="">
+                    <h3>Ecobazar</h3>
+                </div>
+                <div class="subscribe__info">
+                    <h4>Subcribe our Newsletter</h4>
+                    <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                </div>
+                <div class="subscribe__form">
+                    <form action="">
+                        <input type="email"  class="subscrbe__input"
+                        placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__nav">
+            <div class="container">
+                <div class="footer__nav-main">
+            <div class="about">
+                <h4>About Shopery</h4>
+                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <div class="cta">
+                    <button>(219) 555-0114</button> <span>or</span>
+                    <button>Proxy@gmail.com</button>
+                </div>
+            </div>
+            <div class="link__collection">
+                <ul class="footer__column">
+                    <li><h3>My Account</h3></li>
+                    <li><a href="#">My Account</a></li>
+                    <li> <a href="#">Order History</a></li>
+                    <li> <a href="#">Shoping Cart</a></li>
+                    <li> <a href="#">Wishlist</a></li>
+                    <li> <a href="#">Settings</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><h3>Helps</h3></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><h3>Proxy</h3></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Products Details</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <script src="../script/filter_script.js"></script>
+
+</body>
+</html>

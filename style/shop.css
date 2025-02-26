@@ -1,0 +1,42 @@
+/* shop filter */
+.filter__main{
+    padding: 40px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.filter__main select{
+    padding: 10px 16px;
+    border:solid 0.5px gray;
+    border-radius: 4px;
+}
+.shop__product{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     gap: 10px;
+     margin-bottom: 2rem;
+}
+.product__card-shop{
+    border: 2px solid rgba(229, 229, 229, 1);
+    transition: all 0.5s ease-in-out;
+    border-radius: 0.5rem;
+
+}
+.product__card-shop:hover{
+    border: 2px solid #3ece42;
+}
+.product__image-shop{
+    height: 248px;
+    width: auto;
+}
+.product__main-shop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.product__star{
+    color: gold;
+}

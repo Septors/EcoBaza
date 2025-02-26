@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBaza</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="header__contact" aria-label="Store Location">
+                    <img src="/img/Map Pin.png" alt="Map Pin">
+                    <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                </a>
+                <div class="header__links">
+                    <div class="header__select">
+                        <label for="language-select" class="visually-hidden">Select Language</label>
+                        <select id="language-select" class="header__lang-select">
+                            <option value="UA">UA</option>
+                            <option value="ENG">ENG</option>
+                            <option value="RU">RU</option>
+                        </select>  
+                        <label for="valute-select" class="visually-hidden">Select Currency</label>
+                        <select id="valute-select" class="header__valute-select">
+                            <option value="USD">USD</option>
+                            <option value="UAH">UAH</option>
+                            <option value="EURO">EURO</option>
+                        </select>
+                    </div>
+                    <div class="header__account">
+                        <a href="#">Sign In</a>
+                        <span>|</span>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__main">
+                <div class="header__logo">
+                    <img src="/img/header__logo.png" alt="Ecobazar logo">
+                    <h1>Ecobazar</h1>
+                </div>
+                <div class="header__search">
+                    <form action="#" class="header__search-form">
+                        <input type="text" placeholder="Search" aria-label="Search products">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="header__action">
+                    <a href="#" class="favorite-link" aria-label="View favorite items">
+                        <img class="favorite--active" src="/img/header__favorite.png" alt="favorite">
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="cart__container" aria-label="View cart">
+                        <img src="/img/header__cart.png" alt="cart">
+                    </a>
+                    <div class="header__car-value">
+                        <p>Shopping cart:</p>
+                        <p>$57.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="nav_main">
+                    <ul class="nav__category">
+                        <li class="category__button category__button--active"><a href="/index.html" >Home <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        
+                        <li class="category__button"><a href="/page/shop.html">Shop <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>Pages <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>Blog <img src="/img/arrow__down.png" alt="dropdown"></a></li>
+                        <li class="category__button"><a>About Us</a></li>
+                        <li class="category__button"><a>Contact Us</a></li>
+                    </ul>
+                    <div class="call__now">
+                        <a href="tel:(219) 555-0114" aria-label="Call us">
+                            <img src="/img/PhoneCall 1.png" alt="Phone call">
+                            <p>(219) 555-0114</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__main">
+                    <div class="hero__info">
+                        <h5 class="color--green">Welcome to Shopery</h5>
+                        <h1>Fresh & Healthy Organic Food</h1>
+                        <h3>Sale up to <span class="color--orange">30% OFF</span></h3>
+                        <p>Free shipping on all your order. We deliver, you enjoy.</p>
+                        <button aria-label="Shop Now">
+                            <span>Shop now</span> 
+                            <img src="/img/arrow right.png" alt="arrow icon" />
+                        </button>
+                    </div>
+                    <div class="hero__img">
+                        <img src="/img/hero__img.png" alt="Fresh organic food" />
+                    </div>
+                </div>
+                
+                <div class="hero__featured">
+                    <ul>
+                        <li>
+                            <img src="/img/delivery-truck 1.png" alt="Free shipping" />
+                            <div class="featured__info">
+                                <h4>Free Shipping</h4>
+                                <p>Free shipping on all your orders.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/headphones 1.png" alt="Customer support" />
+                            <div class="featured__info">
+                                <h4>Customer Support 24/7</h4>
+                                <p>Instant access to support.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/shopping-bag.png" alt="Secure payment" />
+                            <div class="featured__info">
+                                <h4>100% Secure Payment</h4>
+                                <p>We ensure your money is safe.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/package.png" alt="Safe packaging" />
+                            <div class="featured__info">
+                                <h4>Safe Packaging</h4>
+                                <p>We ensure your items are delivered safely.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="container">
+                <div class="featured__main">
+            <h3>Featured Products</h3>
+            <div class="featured">
+            </div>
+            <div class="all-products">
+                <div class="best__price">
+                    <p>Best price</p>
+                </div>
+                <div class="best__sold">
+                    <p>Best Seller</p>
+                </div>
+                <div class="top__rated">
+                    <p>Top Rated</p>
+                </div>
+                <div class="sale">
+                    <p>SUMMER SALE</p>
+                    <h5>75% off</h5>
+                    <button class="sale__button">Shop Now <img src="/img/green_right-arrow.png" alt=""></button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+        </section>
+        <section class="top-category">
+            
+        </section>
+        <section class="banners">
+            <div class="container">
+                <div class="banner__collection">
+                <div class="banner__sale banner">
+                <h4>BEST DEALS</h4>
+                <h5>Sale of the Month</h5>
+                <div class="sale--timer">
+                </div>
+                <button class="banner__button">Shop Now <img src="/img/green_right-arrow.png" alt=""></button>
+            </div>
+            <div class="meat__sale banner">
+                <h4>BEST 85% FAT FREE</h4>
+                <h5>Low-Fat Meat</h5>
+                <p>Started at <span class="color--orange">$79.99</span></p>
+                <button class="banner__button">Shop Now <img src="/img/green_right-arrow.png" alt=""></button>
+            </div>
+            <div class="fruit__sale banner ">
+                <h4>SUMMER SALE </h4>
+                <h5>100% Fresh Fruit</h5>
+                <p>Up to <span class="color--orange bg--dark">64% OFF</span></p>
+                <button class="banner__button">Shop Now <img src="/img/green_right-arrow.png" alt=""></button>
+            </div>
+        </div>
+        </div>
+
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team__main">
+                    <h2>Our Professional Members</h2>
+                    <div class="team__collection">
+                        <div class="team__card">
+                            <img src="/img/team1.png" alt="">
+                            <div class="team__info">
+                            <h4>Jenny Wilson</h4>
+                            <p>Ceo & Founder</p></div>
+                        </div>
+                        <div class="team__card">
+                            <img src="/img/team2.png" alt="">
+                            <div class="team__info">
+                            <h4>Jane Cooper</h4>
+                            <p>Worker</p></div>
+                        </div>
+                        <div class="team__card">
+                            <img src="/img/team3.png" alt="">
+                            <div class="team__info">
+                            <h4>Cody Fisher</h4>
+                            <p>Security Guard</p></div>
+                        </div>
+                        <div class="team__card">
+                            <img src="/img/team4.png" alt="">
+                            <div class="team__info">
+                            <h4>Robert Fox</h4>
+                            <p>Senior Farmer Manager</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__main">
+                    <h3>What our Client Says</h3>
+                    <div class="testimonial__collection">
+                        <div class="client__card">
+                        <img src="/img/green__quote.png" alt="">
+                            <h5>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies ele. ”</h5>
+                            <div class="customer">
+                                <img src="/img/1customer.png" alt="" class="icon__customer">
+                                <p class="customer__name">
+                                    Jenny Wilson
+                                </p>
+                              
+
+                            </div>
+                        </div>
+                        <div class="client__card">
+                        <img src="/img/green__quote.png" alt="">
+                          <h5>“Proin sed neque nec tellus malesuada ultrices eget a justo. Nullam a nibh faucibus, semper risus ac, ultricies est. Maecenas eget purus in enim imperdiet dapibus in ac mi. Fusce faucibus lacus felis”</h5>
+                            <div class="customer">
+                                <img src="/img/2customer.png" alt="" class="icon__customer">
+                                <p class="customer__name">
+                                    Guy Hawkins
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="client__card">
+                        <img src="/img/green__quote.png" alt="">
+                         <h5>“Nam sed odio diam. Mauris sagittis sapien sed convallis cursus. Proin mattis ultrices urna ac eleifend. Cras vel nisi nec lectus sagittis venenatis. Curabitur laoreet leo sed lorem pulvina”</h5>
+                            <div class="customer">
+                                <img src="/img/3customer.png" alt="" class="icon__customer">
+                                <p class="customer__name">
+                                    Kathryn Murphy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+        <div class="footer__subscribe">
+                <div class="subscribe__logo">
+                    <img src="/img/header__logo.png" alt="">
+                    <h3>Ecobazar</h3>
+                </div>
+                <div class="subscribe__info">
+                    <h4>Subcribe our Newsletter</h4>
+                    <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                </div>
+                <div class="subscribe__form">
+                    <form action="">
+                        <input type="email"  class="subscrbe__input"
+                        placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__nav">
+            <div class="container">
+                <div class="footer__nav-main">
+            <div class="about">
+                <h4>About Shopery</h4>
+                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <div class="cta">
+                    <button>(219) 555-0114</button> <span>or</span>
+                    <button>Proxy@gmail.com</button>
+                </div>
+            </div>
+            <div class="link__collection">
+                <ul class="footer__column">
+                    <li><h3>My Account</h3></li>
+                    <li><a href="#">My Account</a></li>
+                    <li> <a href="#">Order History</a></li>
+                    <li> <a href="#">Shoping Cart</a></li>
+                    <li> <a href="#">Wishlist</a></li>
+                    <li> <a href="#">Settings</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><h3>Helps</h3></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="footer__column">
+                    <li><h3>Proxy</h3></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Products Details</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <script type="module" src="/script/script.js"></script>
+
+</body>
+</html>
