@@ -15,11 +15,49 @@ const products = [
 
 
 
+
+
 const featuredList = document.querySelector('.featured');
 const bestPriceList = document.querySelector('.best__price'); const topSoldList = document.querySelector('.best__sold');
 const topratedList = document.querySelector('.top__rated');
-const cartContainer = document.querySelector('.cart__container'); const shopProduct = document.querySelector('.shop__product');
-const cart = []
+
+ const shopProduct = document.querySelector('.shop__product');
+const cart = [];
+const cartShow = document.querySelector('.cart__container');cartShow.addEventListener('click', () => {
+   
+    const cartDisplay = document.querySelector('.cart--show')
+    const cartProducts = document.querySelector('.cart__product');
+    cartProducts.innerHTML = ""; // Очищаем список перед добавлением
+    if (cartDisplay.style.display === 'none' || cartDisplay.style.display === '') {
+        cartDisplay.style.display = 'flex';
+    } else {
+        cartDisplay.style.display = 'none';
+    }
+    cart.forEach((item) => {
+   
+            const [image, name, price] = item;
+
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart__item');
+
+            const img = document.createElement('img');
+            img.src = image;
+            img.alt = name;
+
+            const nameElement = document.createElement('p');
+            nameElement.textContent = name;
+
+            const priceElement = document.createElement('p');
+            priceElement.textContent = `${price} $`;
+
+            cartItem.appendChild(img);
+            cartItem.appendChild(nameElement);
+            cartItem.appendChild(priceElement);
+            cartProducts.appendChild(cartItem);
+          
+        
+    });
+});
 
 
 function filterRating(){
@@ -179,4 +217,3 @@ const rating = document.getElementById('select__rating');rating.addEventListener
         })
 
 
-    

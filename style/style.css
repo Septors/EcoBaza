@@ -114,17 +114,20 @@
 }
 .cart--show{
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 400px;
     background-color: #fff;
     z-index: 10;
-    right: 0;
-    display: ;
-    display: flex;
+    right:0px ;
+    top: 0;
+
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow: scroll;
 }
+
 /*header nav*/
 
 .header__nav{
