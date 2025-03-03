@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    position: relative;
 }
 .header__account a{
     text-decoration: none;
@@ -106,7 +107,24 @@
 .favorite--active{
     transition: all 1s ease-in;
 }
+.header__cart-value{
+    display: flex;
+    gap: 1rem;
 
+}
+.cart--show{
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    background-color: #fff;
+    z-index: 10;
+    right: 0;
+    display: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 /*header nav*/
 
 .header__nav{

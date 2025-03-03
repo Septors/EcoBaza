@@ -19,7 +19,7 @@ const featuredList = document.querySelector('.featured');
 const bestPriceList = document.querySelector('.best__price'); const topSoldList = document.querySelector('.best__sold');
 const topratedList = document.querySelector('.top__rated');
 const cartContainer = document.querySelector('.cart__container'); const shopProduct = document.querySelector('.shop__product');
-
+const cart = []
 
 
 function filterRating(){
@@ -61,6 +61,10 @@ function createCollection (type,name,price,image,rating){
             const productBy =  document.createElement('button');
             productBy.classList.add('product__by');
             productBy.innerHTML =`<img src ="/img/Bag.png" alt="Добавить в корзину">`;
+            productBy.addEventListener('click',() => {
+                cart.push([image,name,price]);
+                console.log(cart)
+            })
 
             for(let i = 1; i<= 5;i++ ){
                 const star = document.createElement('span');
