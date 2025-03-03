@@ -4,19 +4,25 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 1px solid gray;
 }
 .filter__main select{
     padding: 10px 16px;
     border:solid 0.5px gray;
     border-radius: 4px;
 }
+
 .shop__product{
      display: flex;
      align-items: center;
      flex-wrap: wrap;
      justify-content: space-around;
      gap: 10px;
-     margin-bottom: 2rem;
+     margin: 2rem 0;
+     padding-bottom: 2rem;
+     border-bottom: 1px solid gray;
+    
+
 }
 .product__card-shop{
     border: 2px solid rgba(229, 229, 229, 1);

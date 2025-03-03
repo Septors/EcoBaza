@@ -107,10 +107,10 @@ if(window.location.pathname.endsWith("/shop.html")){ document.addEventListener('
 
 const showView = document.getElementById('elect__card-view');
 showView.addEventListener('change', () => {
-    const selectedView = showView.value;  // Получаем выбранное значение
+    const selectedView = showView.value;  
     shopProduct.innerHTML = "";
     renderCart(filterRating(),'shop',selectedView,shopProduct)
-    console.log(selectedView);  // Выведет, например, "16", "12" или "8"
+    console.log(selectedView); 
     });
 
 const rating = document.getElementById('select__rating');rating.addEventListener('change', () => {
@@ -128,7 +128,7 @@ const rating = document.getElementById('select__rating');rating.addEventListener
         renderCart(products.filter(items => items.rating == 4),'shop', selectedView == 0 ? 8 : selectedView,shopProduct)
     }
 
-    console.log(selectedRating);  // Выведет, например, "16", "12" или "8"
+    console.log(selectedRating);  
     });
 
     const category = document.getElementById('select__category');
